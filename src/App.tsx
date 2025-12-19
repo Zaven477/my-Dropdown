@@ -30,7 +30,7 @@ export const App = () => {
       <RiArrowDropDownLine
         size={35}
         color="white"
-        className="cursor-pointer"
+        className={`cursor-pointer ${isOpen ? 'rotate-180': ''}`}
         onClick={showDropdown}
       />
       {isOpen && (
